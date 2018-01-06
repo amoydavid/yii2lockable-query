@@ -15,14 +15,19 @@
     ],
     "autoload": {
         "psr-4": {
-            "amoydavid/yii2LockableQuery\\": "./src"
+            "amoydavid\\Yii2LockableQuery\\": "src/"
         }
     },
     "config": {
         "process-timeout": 1800,
         "fxp-asset": {
-            "pattern-skip-version": "(-build|-patch)",
-            "asset-pattern-skip-version": "(-build|-patch)"
+            "enabled": false
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }
