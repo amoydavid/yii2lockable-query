@@ -18,7 +18,6 @@
             "amoydavid/yii2LockableQuery\\": "./src"
         }
     },
-    "minimum-stability": "dev",
     "config": {
         "process-timeout": 1800,
         "fxp-asset": {
