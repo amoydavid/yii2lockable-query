@@ -1,6 +1,6 @@
 {
     "name": "amoydavid/yii2lockable-query",
-    "description": "MySQL InnoDB lock support for ActiveRecord",
+    "description": "MySQL InnoDB lock support(select for update) for ActiveRecord",
     "type": "yii-extension",
     "require": {
         "yiisoft/yii2": "~2.0",
