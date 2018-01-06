@@ -19,6 +19,26 @@ to the `require` section of your composer.json.
 
 ## Usage ##
 
+Set schema map for database connection
+
+    <?php
+    return [
+        'class' => 'yii\db\Connection',
+        'schemaMap' => [
+            'mysql' => '\amoydavid\Yii2LockableQuery\mysql\Schema', // set up mysql schema
+        ],
+        'dsn' => 'mysql:host=localhost;dbname=yii',
+        'username' => 'root',
+        'password' => '',
+        'charset' => 'utf8',
+    
+        // Schema cache options (for production environment)
+        //'enableSchemaCache' => true,
+        //'schemaCacheDuration' => 60,
+        //'schemaCache' => 'cache',
+    ]; 
+
+
 Extend your ActiveRecord class via \amoydavid\Yii2LockableQuery\ActiveRecord
 
     /**
