@@ -2,7 +2,7 @@
 
 namespace amoydavid\Yii2LockableQuery\mysql;
 
-use common\components\Query;
+use amoydavid\Yii2LockableQuery\Query;
 use yii\db\Expression;
 
 
