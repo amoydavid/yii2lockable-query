@@ -26,6 +26,7 @@ Set schema map for database connection
         'class' => 'yii\db\Connection',
         'schemaMap' => [
             'mysql' => '\amoydavid\Yii2LockableQuery\mysql\Schema', // set up mysql schema
+            'mssql' => '\amoydavid\Yii2LockableQuery\mssql\Schema', // set up mssql schema
         ],
         'dsn' => 'mysql:host=localhost;dbname=yii',
         'username' => 'root',

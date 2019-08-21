@@ -1,8 +1,4 @@
 <?php
-/**
- * @copyright XinXiaoDian
- * @license http://www.xinxiaodian.com
- */
 
 namespace amoydavid\Yii2LockableQuery\mysql;
 
