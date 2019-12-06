@@ -3,6 +3,7 @@
 namespace amoydavid\Yii2LockableQuery\mysql;
 
 use amoydavid\Yii2LockableQuery\Query;
+use amoydavid\Yii2LockableQuery\ActiveQuery;
 
 
 /**
@@ -22,7 +23,7 @@ class QueryBuilder extends \yii\db\mysql\QueryBuilder
     {
         list($sql , $params) = parent::build($query, $params);
 
-        if($query instanceof Query && $query->forUpdate) {
+        if(($query instanceof Query || $query instanceof ActiveQuery)&& $query->forUpdate) {
             $sql .= ' FOR UPDATE';
         }
 
